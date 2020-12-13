@@ -9,16 +9,19 @@ import UIKit
 
 class ProfileViewController: UIViewController {
     
-    var name: String?
+    var name = SGUUser.username
+    var login: String?
+    var password: String?
     
     @IBOutlet weak var userImage: UIImageView!
     @IBOutlet weak var usernameLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        usernameLabel.text = name
+        guard let login = self.login else { return }
+        guard let password = self.password else { return }
+        usernameLabel.text = "Имя \(name.rawValue) Логин \(login) Пароль \(password)"
         userImage.clipsToBounds = true
-        userImage.layer.cornerRadius = userImage.frame.size.width / 2
+        userImage.layer.cornerRadius = 100
     }
     
     @IBAction func logOutButton(_ sender: Any) {

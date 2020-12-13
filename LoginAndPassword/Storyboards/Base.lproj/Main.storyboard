@@ -73,8 +73,8 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Войти"/>
                                 <connections>
-                                    <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AuW-Ch-27p"/>
-                                    <segue destination="Um9-kM-SIH" kind="presentation" modalPresentationStyle="fullScreen" id="mH8-Xc-J5L"/>
+                                    <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zel-S4-wTg"/>
+                                    <segue destination="Um9-kM-SIH" kind="presentation" modalPresentationStyle="fullScreen" id="Vym-YW-2LI"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -216,8 +216,8 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="userImage" destination="pH3-FE-IZK" id="zb5-cy-krs"/>
-                        <outlet property="usernameLabel" destination="HNC-vl-3le" id="7Gj-Ie-yc5"/>
+                        <outlet property="userImage" destination="pH3-FE-IZK" id="Z5F-W4-gEz"/>
+                        <outlet property="usernameLabel" destination="HNC-vl-3le" id="2jd-Q2-BzO"/>
                         <segue destination="Im1-Yb-EYh" kind="unwind" identifier="unwindToStart" unwindAction="unwind:" id="eR8-pg-xRs"/>
                     </connections>
                 </viewController>

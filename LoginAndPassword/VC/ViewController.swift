@@ -19,14 +19,18 @@ class ViewController: UIViewController {
         SignInButton.layer.cornerRadius = 10
     }
     
+    
     @IBAction func buttonAction(_ sender: Any) {
-        if SGUUser.login.rawValue == loginField.text! && SGUUser.password.rawValue == passwordField.text!{
-            func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-                let tabBarController = segue.destination as! UITabBarController
-                let destinationVC = tabBarController.viewControllers?.first as! ProfileViewController
-                destinationVC.name = "\(loginField.text!) \(passwordField.text!) \(SGUUser.username.rawValue)"
-                
-            }
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard segue.identifier == "logIn" else { return }
+        let tabBarController = segue.destination as! UITabBarController
+        let destinationVC = tabBarController.navigationController?.viewControllers.first as! ProfileViewController
+        if SGUUser.login.rawValue == loginField.text! && SGUUser.password.rawValue == passwordField.text! {
+            destinationVC.login = loginField.text
+            destinationVC.password = passwordField.text
         } else {
             let alertVC = UIAlertController(
                         title: "Error",
@@ -35,7 +39,7 @@ class ViewController: UIViewController {
             let action = UIAlertAction(title: "OK", style: .default, handler: nil)
             alertVC.addAction(action)
             self.present(alertVC, animated: true, completion: nil)
-            print("АЛЛО \(loginField.text!)")
+            print("АЛЛО \(SGUUser.login.rawValue)")
         }
     }
     
