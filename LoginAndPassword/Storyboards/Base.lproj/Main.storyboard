@@ -82,7 +82,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="j56-xf-Qfa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2mL-P0-62L"/>
-                            <constraint firstItem="Duk-z8-sz4" firstAttribute="top" relation="greaterThanOrEqual" secondItem="j56-xf-Qfa" secondAttribute="bottom" constant="50.5" id="4em-ai-OIG"/>
+                            <constraint firstItem="Duk-z8-sz4" firstAttribute="top" relation="lessThanOrEqual" secondItem="j56-xf-Qfa" secondAttribute="bottom" constant="50.5" id="4em-ai-OIG"/>
                             <constraint firstItem="ohK-d9-nSP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="Ggi-3a-3qf"/>
                             <constraint firstItem="mbQ-1S-Ikm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KM2-cF-AJK"/>
                             <constraint firstItem="Duk-z8-sz4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="NjK-xA-2HN"/>
@@ -112,6 +112,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Um9-kM-SIH" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ppg-nD-2pJ">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
