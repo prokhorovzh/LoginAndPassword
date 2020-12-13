@@ -54,6 +54,9 @@
                                         </subviews>
                                     </stackView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="142" id="lMc-KO-JZA"/>
+                                </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Личный кабинет студента СГУ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j56-xf-Qfa">
                                 <rect key="frame" x="47.5" y="188" width="280.5" height="24"/>
@@ -73,7 +76,7 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Войти"/>
                                 <connections>
-                                    <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zel-S4-wTg"/>
+                                    <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UfD-ZZ-age"/>
                                     <segue destination="Um9-kM-SIH" kind="presentation" modalPresentationStyle="fullScreen" id="Vym-YW-2LI"/>
                                 </connections>
                             </button>
@@ -97,7 +100,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="NQz-9P-wAf"/>
                     <connections>
-                        <outlet property="SignInButton" destination="mbQ-1S-Ikm" id="YDA-jc-K7m"/>
+                        <outlet property="SignInButton" destination="mbQ-1S-Ikm" id="yXf-nt-Hei"/>
                         <outlet property="loginField" destination="bLd-Oe-WAn" id="wE8-pU-kaC"/>
                         <outlet property="passwordField" destination="CxL-tF-4N6" id="Ypq-aw-ETT"/>
                     </connections>
