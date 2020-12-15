@@ -13,7 +13,11 @@ class ProfileViewController: UIViewController {
     var login: String?
     var password: String?
     
-    @IBOutlet weak var userImage: UIImageView!
+    @IBOutlet weak var userImage: UIImageView! {
+        didSet {
+            userImage.layer.cornerRadius = userImage.layer.bounds.height / 2
+        }
+    }
     @IBOutlet weak var usernameLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
